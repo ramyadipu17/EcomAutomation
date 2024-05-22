@@ -27,20 +27,24 @@ public class LoginPage extends BrowserDriver {
 
     }
 
-    public static void enterUserName() {
+    public static void enterUserName() throws InterruptedException {
         driver.findElement(By.id(username_id)).sendKeys("standard_user");
+        Thread.sleep(500);
     }
 
-    public static void enterInvalidUserName() {
+    public static void enterInvalidUserName() throws InterruptedException {
         driver.findElement(By.id(username_id)).sendKeys("ramya");
+        Thread.sleep(500);
     }
 
-    public static void enterPassword() {
+    public static void enterPassword() throws InterruptedException {
         driver.findElement(By.id(password_id)).sendKeys("secret_sauce");
+        Thread.sleep(500);
     }
 
-    public static void enterInvalidPassword() {
+    public static void enterInvalidPassword() throws InterruptedException {
         driver.findElement(By.id(password_id)).sendKeys("abcd");
+        Thread.sleep(500);
     }
 
     public static void clickLoginBtn() throws InterruptedException {

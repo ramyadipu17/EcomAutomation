@@ -15,7 +15,7 @@ public class login {
     }
 
     @When("I enter valid username and password")
-    public void iEnterValidUsernameAndPassword() {
+    public void iEnterValidUsernameAndPassword() throws InterruptedException {
         enterUserName();
         enterPassword();
 
@@ -40,7 +40,7 @@ public class login {
     }
 
     @When("I enter invalid username and password")
-    public void iEnterInvalidUsernameAndPassword() {
+    public void iEnterInvalidUsernameAndPassword() throws InterruptedException {
         enterInvalidUserName();
         enterInvalidPassword();
     }
